@@ -12,7 +12,7 @@ README: [go to this file](./电机/README.md)
 - [ ] 数据采集
 - [ ] 预扫描
 
-## 电机
+## 显示
 README: [go to this file](./显示/README.md)
 
 **TODO**
@@ -34,5 +34,13 @@ README: [go to this file](./uni-app/README.md)
 **TODO**
 
 - [ ] 读取MySQL数据库并将图片呈现
+
+## 数据传输
+README: [go to this file](./数据传输/README.md)
+
+**TODO**
+
+- [ ] 通过uart读取到stm32发来的数据，并将其插入到MySQL数据库中
+- [ ] （optional）读取MySQL数据库，并将成像图片在oled上显示
 
 
