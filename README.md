@@ -4,22 +4,6 @@
 
 ---
 
-## 电机
-README: [go to this file](./电机/README.md)
-
-**TODO**
-
-- [ ] 数据采集
-- [ ] 预扫描
-
-## 显示
-README: [go to this file](./显示/README.md)
-
-**TODO**
-
-- [ ] 对电机进行控制
-- [ ] （optional）读取MySQL数据库，并将成像图片在oled上显示
-
 ## AI测试
 README: [go to this file](./AI测试/README.md)
 
@@ -28,12 +12,14 @@ README: [go to this file](./AI测试/README.md)
 - [ ] 进行数据集采集
 - [ ] 能对目标进行识别
 
+
 ## uni-app开发
 README: [go to this file](./uni-app/README.md)
 
 **TODO**
 
 - [ ] 读取MySQL数据库并将图片呈现
+
 
 ## 数据传输
 README: [go to this file](./数据传输/README.md)
@@ -45,6 +31,25 @@ README: [go to this file](./数据传输/README.md)
 
 #### 服务器部分
 - [ ] 监听数据端口，一旦发生变化便执行脚本
+
+
+## 显示
+README: [go to this file](./显示/README.md)
+
+**TODO**
+
+- [ ] 对电机进行控制
+- [ ] （optional）读取MySQL数据库，并将成像图片在oled上显示
+
+
+## 电机
+README: [go to this file](./电机/README.md)
+
+**TODO**
+
+- [ ] 数据采集
+- [ ] 预扫描
+
 
 ## 雷达
 README: [go to this file](./雷达/README.md)
