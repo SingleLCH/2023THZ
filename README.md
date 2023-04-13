@@ -39,9 +39,12 @@ README: [go to this file](./uni-app/README.md)
 README: [go to this file](./数据传输/README.md)
 
 **TODO**
-
+#### esp8266部分
 - [ ] 通过uart读取到stm32发来的数据，并将其插入到MySQL数据库中
 - [ ] （optional）读取MySQL数据库，并将成像图片在oled上显示
+
+#### 服务器部分
+- [ ] 监听数据端口，一旦发生变化便执行脚本
 
 ## 雷达
 README: [go to this file](./雷达/README.md)
