@@ -20,12 +20,20 @@ README: [go to this file](./显示/README.md)
 - [ ] 对电机进行控制
 - [ ] （optional）读取MySQL数据库，并将成像图片在oled上显示
 
-## AI识别
-README: [go to this file](./AI识别/README.md)
+## AI测试
+README: [go to this file](./AI测试/README.md)
 
 **TODO**
 
 - [ ] 进行数据集采集
 - [ ] 能对目标进行识别
+
+## uni-app开发
+README: [go to this file](./uni-app/README.md)
+
+**TODO**
+
+- [ ]
+- [ ]
 
 
