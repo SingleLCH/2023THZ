@@ -11,3 +11,21 @@ README: [go to this file](./电机/README.md)
 
 - [ ] 数据采集
 - [ ] 预扫描
+
+## 电机
+README: [go to this file](./显示/README.md)
+
+**TODO**
+
+- [ ] 对电机进行控制
+- [ ] （optional）读取MySQL数据库，并将成像图片在oled上显示
+
+## AI识别
+README: [go to this file](./AI识别/README.md)
+
+**TODO**
+
+- [ ] 进行数据集采集
+- [ ] 能对目标进行识别
+
+
