@@ -43,4 +43,10 @@ README: [go to this file](./数据传输/README.md)
 - [ ] 通过uart读取到stm32发来的数据，并将其插入到MySQL数据库中
 - [ ] （optional）读取MySQL数据库，并将成像图片在oled上显示
 
+## 雷达
+README: [go to this file](./数据传输/README.md)
 
+**TODO**
+
+- [✔] 通过uart读取到stm32发来的数据，并将其插入到MySQL数据库中
+- [ ] （optional）读取MySQL数据库，并将成像图片在oled上显示
