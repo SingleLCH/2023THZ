@@ -48,6 +48,6 @@ README: [go to this file](./数据传输/README.md)
 
 **TODO**
 
-- [✔] 向AWR1843发送配置文件，并接受TLVs数据包完成解析后发送至ESP8266
+- [ ] 向AWR1843发送配置文件，并接受TLVs数据包完成解析后发送至ESP8266
 - [ ] TLVs数据格式纠正
 - [ ] 代码函数封装
