@@ -44,7 +44,7 @@ README: [go to this file](./数据传输/README.md)
 - [ ] （optional）读取MySQL数据库，并将成像图片在oled上显示
 
 ## 雷达
-README: [go to this file](./数据传输/README.md)
+README: [go to this file](./雷达/README.md)
 
 **TODO**
 
