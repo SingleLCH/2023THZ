@@ -6,18 +6,17 @@
  ---
 
 ### esp8266部分代码
+已经实现数据传输功能，但仍有bug存在
+
 ```c++
-#include <ESP8266WiFi.h>            
-#include <MySQL_Connection.h>    
-#include <MySQL_Cursor.h>
-#include <SoftwareSerial.h>
-
-
 #define id  1
 IPAddress server_addr(47,108,223,15);   
 char user[] = "root";             
 char password[] = "Wsad080874";        
+```
+服务器为阿里云服务器
 
+```c++
 SoftwareSerial espSerial(7, 8);
 //SoftwareSerial Serial(2, 3);
 char ssid[] = "322四大金刚";        
@@ -44,39 +43,7 @@ void readAndRecordData(){
            Serial.println("ok,success");
            delete cur_mem;       
 }
-
-
-void setup()
-{
-  Serial.begin(9600);
-  while (!Serial);      
-  Serial.printf("\nConnecting to %s", ssid);
-  WiFi.begin(ssid, pass);         
-  while (WiFi.status() != WL_CONNECTED) {
-           
-    delay(500);
-    Serial.print(".");
-  }
-
-  Serial.println("\nConnected to network");
-  Serial.print("My IP address is: ");
-  Serial.println(WiFi.localIP());     
-
-  Serial.print("Connecting to SQL...  ");
-  if (conn.connect(server_addr, 3306, user, password))       
-    Serial.println("OK.");  
-  else
-    Serial.println("FAILED.");
-  cursor = new MySQL_Cursor(&conn);  
-}
-
-void loop()
-{
-if (Serial.available() > 0){ 
-  readAndRecordData();
-  delay(100); 
-}       
-}
 ```
+数据传输部分代码
 
 ## THZ.py为服务器端代码
