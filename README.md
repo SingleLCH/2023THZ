@@ -33,7 +33,6 @@ README: [go to this file](./uni-app/README.md)
 
 **TODO**
 
-- [ ]
-- [ ]
+- [ ] 读取MySQL数据库并将图片呈现
 
 
