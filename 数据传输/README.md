@@ -40,11 +40,11 @@ void readAndRecordData(){
            x = Serial.parseInt();  
            y = Serial.parseInt();
            z = Serial.parseInt();                             
-                  MySQL_Cursor *cur_mem = new MySQL_Cursor(&conn);  
-                  sprintf(buff, "INSERT INTO %s.%s (x,y,z) VALUES ('%d','%d','%d')", database, table, x, y, z);                       
-                  cur_mem->execute(buff);        
-                  Serial.println("ok,success");
-                  delete cur_mem; 
+           MySQL_Cursor *cur_mem = new MySQL_Cursor(&conn);  
+           sprintf(buff, "INSERT INTO %s.%s (x,y,z) VALUES ('%d','%d','%d')", database, table, x, y, z);                       
+           cur_mem->execute(buff);        
+           Serial.println("ok,success");
+           delete cur_mem; 
            } 
         }     
 }
