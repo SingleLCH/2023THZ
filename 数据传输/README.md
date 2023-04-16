@@ -6,21 +6,25 @@
  ---
 
 ### esp8266部分代码
-已经实现数据传输功能，但仍有bug存在
-
+  数据定义：先发'a'，再发数据，实现数据校验功能
+  
 ```c++
-#define id  1
+#include <ESP8266WiFi.h>            
+#include <MySQL_Connection.h>    
+#include <MySQL_Cursor.h>
+#include <SoftwareSerial.h>
+
 IPAddress server_addr(47,108,223,15);   
 char user[] = "root";             
-char password[] = "Wsad080874";        
-```
-服务器为阿里云服务器
+char password[] = "Wsad080874";
 
-```c++
-SoftwareSerial espSerial(7, 8);
-//SoftwareSerial Serial(2, 3);
-char ssid[] = "322四大金刚";        
-char pass[] = "uestc322";    
+char receive_data;
+char x=0;      
+char y=0;
+char z=0;   
+
+char ssid[] = "Mysqlserver";        
+char pass[] = "Wsad1234+";    
 
 WiFiClient client;                 
 MySQL_Connection conn(&client);
@@ -29,19 +33,53 @@ char database[] = "THZ";
 char table[] = "esptest"; 
 
 void readAndRecordData(){
-           Serial.println("Received data: ");             
-           char buff[128];                                         
-           int x=0;      
-           int y=0;
-           int z=0;        
+        if (Serial.available() > 0){
+           char buff[128];
+           receive_data = Serial.read();
+           if(receive_data=='a'){                                              
            x = Serial.parseInt();  
            y = Serial.parseInt();
-           z = Serial.parseInt();
-           MySQL_Cursor *cur_mem = new MySQL_Cursor(&conn);  
-           sprintf(buff, "INSERT INTO %s.%s (x,y,z) VALUES ('%d','%d','%d')", database, table,x,y,z);                       
-           cur_mem->execute(buff);        
-           Serial.println("ok,success");
-           delete cur_mem;       
+           z = Serial.parseInt();                             
+                  MySQL_Cursor *cur_mem = new MySQL_Cursor(&conn);  
+                  sprintf(buff, "INSERT INTO %s.%s (x,y,z) VALUES ('%d','%d','%d')", database, table, x, y, z);                       
+                  cur_mem->execute(buff);        
+                  Serial.println("ok,success");
+                  delete cur_mem; 
+           } 
+        }     
+}
+
+
+void setup()
+{
+  
+  Serial.begin(9600);
+  while (!Serial);      
+  Serial.printf("\nConnecting to %s", ssid);
+  WiFi.begin(ssid, pass);         
+  while (WiFi.status() != WL_CONNECTED) {
+           
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println("\nConnected to network");
+  Serial.print("My IP address is: ");
+  Serial.println(WiFi.localIP());     
+
+  Serial.print("Connecting to SQL...  ");
+  if (conn.connect(server_addr, 3306, user, password))       
+    Serial.println("OK.");  
+  else
+    Serial.println("FAILED.");
+  cursor = new MySQL_Cursor(&conn);  
+}
+
+void loop()
+{
+    
+  readAndRecordData();        
+
 }
 ```
 数据传输部分代码
