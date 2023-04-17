@@ -22,6 +22,7 @@ README: [go to this file](./uni-app/README.md)
 
 
 ## 数据传输
+数据传输格式要求 'a'+ int X+ int Y+ int Z
 README: [go to this file](./数据传输/README.md)
 
 **TODO**
