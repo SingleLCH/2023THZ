@@ -83,5 +83,28 @@ void loop()
 }
 ```
 数据传输部分代码
+第二版
+```c++
+void readAndRecordData(){
+  char input[30];
+  int32_t x = 0, y = 0, z = 0;
+
+  if (Serial.available()) {
+    int count = Serial.readBytesUntil('b', input, sizeof(input) - 1);
+    input[count] = 0;
+
+    int numValues = sscanf(input, "%d %d %d", &x, &y, &z);
+    if (numValues == 3) {
+     MySQL_Cursor *cur_mem = new MySQL_Cursor(&conn);  
+     sprintf(buff, "INSERT INTO %s.%s (x,y,z) VALUES ('%d','%d','%d')", database, table, x, y, z);                       
+     cur_mem->execute(buff);        
+     Serial.println("ok,success");
+     delete cur_mem;
+    } else {
+      Serial.println("Invalid input");
+    }
+  }     
+}
+```
 
 ## THZ.py为服务器端代码
