@@ -19,7 +19,8 @@ README: [go to this file](./uni-app/README.md)
 
 **TODO**
 
-- [ ] 读取MySQL数据库并将图片呈现
+- [x] 读取MySQL数据库并将图片呈现
+- [ ] 界面优化，以及识别结果的呈现
 
 
 ## 数据传输
