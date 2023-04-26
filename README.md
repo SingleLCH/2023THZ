@@ -11,6 +11,7 @@ README: [go to this file](./AI测试/README.md)
 
 - [ ] 进行数据集采集
 - [x] 能对目标进行识别
+- [ ] 进行脚本自动识别缺陷
 
 
 ## uni-app开发
