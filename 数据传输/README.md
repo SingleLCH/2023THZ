@@ -1,12 +1,12 @@
-## 本实验分为两部分，stm32通过esp8266WiFi模块连接到MySQL数据库，以及服务器端成像数据的转移
+## 本实验分为两部分，stm32通过Esp8266WiFi模块连接到MySQL数据库，以及服务器端成像数据的转移
 
-### esp8266针脚定义
+### Esp8266针脚定义
  ![image](https://github.com/SingleLCH/2023THZ/blob/main/%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93/esp8266%20define/esp8266.png)
  
  ---
 
-### esp8266部分代码
-  数据定义：先发数据，当数据struct结束时，发char 'b',结束数据传输以及校验功能
+### Esp8266部分代码
+### 数据定义：先发数据，当数据struct结束时，发char 'b',结束数据传输以及校验功能
   
 ```c++
 #include <ESP8266WiFi.h>            
@@ -82,8 +82,10 @@ void loop()
 
 }
 ```
-数据传输部分代码
-第二版
+## 数据传输部分代码
+### 第二版
+### 本次更新解决了只能读取8bits的问题
+
 ```c++
 void readAndRecordData(){
   char input[30];
@@ -107,8 +109,9 @@ void readAndRecordData(){
 }
 ```
 
-数据传输代码
-第三版
+## 数据传输代码
+### 第三版
+### 本次更新加入了mqtt协议，对接python脚本
 
 ```c++
 
