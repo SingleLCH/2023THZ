@@ -6,7 +6,7 @@
  ---
 
 ### esp8266部分代码
-  数据定义：先发'a'，再发数据，实现数据校验功能
+  数据定义：先发数据，当数据struct结束时，发char 'b',结束数据传输以及校验功能
   
 ```c++
 #include <ESP8266WiFi.h>            
@@ -107,4 +107,46 @@ void readAndRecordData(){
 }
 ```
 
+数据传输代码
+第三版
+
+```c++
+
+void readAndRecordData(){
+  char input[30];
+  int32_t x = 0, y = 0, z = 0;
+
+  if (Serial.available()) {
+    int count = Serial.readBytesUntil('b', input, sizeof(input) - 1);
+    input[count] = 0;
+
+    int numValues = sscanf(input, "%d %d %d", &x, &y, &z);
+    if (numValues == 3) {
+     MySQL_Cursor *cur_mem = new MySQL_Cursor(&conn);  
+     char buff[128];
+     sprintf(buff, "INSERT INTO %s.%s (x,y,z) VALUES ('%d','%d','%d')", database, table, x, y, z);                       
+     cur_mem->execute(buff);        
+     Serial.println("ok,success");
+     delete cur_mem;
+    }if (numValues != 3){
+    mqtt_client.setServer(mqtt_server, 1883); 
+    while (!mqtt_client.connected()) {
+    if (mqtt_client.connect("ESP8266Client")) {
+      Serial.println("connected to MQTT broker");
+    } else {
+      Serial.print("failed with state ");
+      Serial.print(mqtt_client.state());
+      delay(2000);
+    }
+  }   
+       mqtt_client.publish("pythonstart", "start"); 
+       Serial.println("Start"); 
+      }
+    
+  }     
+}
+
+```
+
 ## THZ.py为服务器端代码
+### 本此更新加入了基于mqtt协议的启动代码，从而实现了python成像脚本的自动运行
