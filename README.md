@@ -10,7 +10,7 @@ README: [go to this file](./AI测试/README.md)
 **TODO**
 
 - [ ] 进行数据集采集
-- [ ] 能对目标进行识别
+- [x] 能对目标进行识别
 
 
 ## uni-app开发
@@ -27,12 +27,12 @@ README: [go to this file](./数据传输/README.md)
 
 **TODO**
 #### esp8266部分
-- [ ] 通过uart读取到stm32发来的数据，并将其插入到MySQL数据库中
+- [x] 通过uart读取到stm32发来的数据，并将其插入到MySQL数据库中
 - [ ] （optional）读取MySQL数据库，并将成像图片在oled上显示
 
 #### 服务器部分
 - [x] 监听数据端口，一旦发生变化便执行脚本
-- [ ] bug修改以及优化
+- [x] bug修改以及优化
 
 
 ## 显示
@@ -49,7 +49,7 @@ README: [go to this file](./电机/README.md)
 
 **TODO**
 
-- [ ] 数据采集
+- [x] 数据采集
 - [ ] 预扫描
 
 
@@ -58,5 +58,5 @@ README: [go to this file](./雷达/README.md)
 
 **TODO**
 
-- [ ] TLVs数据格式纠正
-- [ ] 代码函数封装
+- [x] TLVs数据格式纠正
+- [x] 代码函数封装
