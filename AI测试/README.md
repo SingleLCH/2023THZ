@@ -1,1 +1,2 @@
 ## 本实验基于yolov5进行目标识别
+### conda activate THZ
