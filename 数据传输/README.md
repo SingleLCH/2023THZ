@@ -150,6 +150,45 @@ void readAndRecordData(){
 }
 
 ```
+### 临时
+```c++
+void readAndRecordData(){
+  char input[30];
+  int32_t x = 0, y = 0, z = 0;
+  char c;
+  c = Serial.read();   
+    if ( c == 'b') {
+    int count = Serial.readBytes(input, sizeof(input) - 1);
+    input[count] = 0;
+
+    // int numValues = sscanf(input, "%d %d %d", &x, &y, &z);
+    
+     MySQL_Cursor *cur_mem = new MySQL_Cursor(&conn);  
+     char buff[128];
+     sprintf(buff, "INSERT INTO %s.%s (x,y,z) VALUES ('%d','%d','%d')", database, table, x, y, z);                       
+     cur_mem->execute(buff);        
+     Serial.println("ok,success");
+     delete cur_mem;
+    
+    }    
+    if (c == 'a' ){
+    mqtt_client.setServer(mqtt_server, 1883); 
+    while (!mqtt_client.connected()) {
+    if (mqtt_client.connect("ESP8266Client")) {
+      Serial.println("connected to MQTT broker");
+    } else {
+      Serial.print("failed with state ");
+      Serial.print(mqtt_client.state());
+      delay(2000);
+    }
+  }   
+       mqtt_client.publish("pythonstart", "start"); 
+       Serial.println("Start"); 
+      }
+    
+  
+}
+```
 
 ## THZ.py为服务器端代码
 ### 本此更新加入了基于mqtt协议的启动代码，从而实现了python成像脚本的自动运行
