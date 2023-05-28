@@ -83,8 +83,8 @@ void loop()
 }
 ```
 ## 数据传输部分代码
-### 第二版
-### 本次更新解决了只能读取8bits的问题
+第二版
+- 本次更新解决了只能读取8bits的问题
 
 ```c++
 void readAndRecordData(){
@@ -110,8 +110,8 @@ void readAndRecordData(){
 ```
 
 ## 数据传输代码
-### 第三版
-### 本次更新加入了mqtt协议，对接python脚本
+第三版
+- 本次更新加入了mqtt协议，对接python脚本
 
 ```c++
 
@@ -151,6 +151,7 @@ void readAndRecordData(){
 
 ```
 ### 临时
+
 ```c++
 void readAndRecordData(){
   char input[30];
@@ -189,6 +190,148 @@ void readAndRecordData(){
   
 }
 ```
+
+## 第五次
+- 加入了手机app操控功能
+
+完整代码
+
+``` c++
+#include <ESP8266WiFi.h>            
+#include <MySQL_Connection.h>    
+#include <MySQL_Cursor.h>
+#include <SoftwareSerial.h>
+#include <PubSubClient.h>
+
+#define id  1
+IPAddress server_addr(47,108,223,15);   
+char user[] = "root";             
+char password[] = "Wsad080874";
+const char* mqtt_server = "144.24.71.140";
+
+char receive_data;    
+
+char ssid[] = "Mysqlserver";        
+char pass[] = "Wsad1234+";    
+
+WiFiClient client;   
+PubSubClient mqtt_client(client);              
+MySQL_Connection conn(&client);
+MySQL_Cursor* cursor;    
+char database[] = "test";                   
+char table[] = "testthz"; 
+int led = LED_BUILTIN;
+int i=0;
+
+void readAndRecordData(){
+
+
+  char input[30];
+  int32_t x = 0, y = 0, z = 0;
+  char c;
+  c = Serial.read();   
+    if ( c == 'b') {
+    digitalWrite(led,HIGH);   
+    int count = Serial.readBytes(input, sizeof(input) - 1);
+    input[count];
+    sscanf(input, "%d %d %d", &x, &y, &z);
+    
+     MySQL_Cursor *cur_mem = new MySQL_Cursor(&conn);  
+     char buff[128];
+     sprintf(buff, "INSERT INTO %s.%s (x,y,z) VALUES ('%d','%d','%d')", database, table, x, y, z);                       
+     cur_mem->execute(buff);        
+     Serial.println("ok,success");
+    digitalWrite(led,LOW);     
+     delete cur_mem;
+    
+    }    
+    if (c == 'a' ){
+    mqtt_client.setServer(mqtt_server, 1883); 
+    while (!mqtt_client.connected()) {
+    if (mqtt_client.connect("ESP8266Client")) {
+      Serial.println("connected to MQTT broker");
+    } else {
+      Serial.print("failed with state ");
+      Serial.print(mqtt_client.state());
+      delay(2000);
+    }
+  }   
+       mqtt_client.publish("pythonstart", "start"); 
+       Serial.println("Start"); 
+      }
+    
+  
+}
+
+void mqtt(){
+
+    mqtt_client.setServer(mqtt_server, 1883); 
+    while (!mqtt_client.connected()) {
+    if (mqtt_client.connect("ESP8266Client")) {
+      Serial.println("connected to MQTT broker");
+    } else {
+      Serial.print("failed with state ");
+      Serial.print(mqtt_client.state());
+    }
+  }   
+
+  mqtt_client.setCallback(callback);
+  mqtt_client.subscribe("presence");
+}
+
+void callback(char* topic, byte* payload, unsigned int length) {
+  Serial.println("Received MQTT message");
+  String message;
+  for (int i = 0; i < length; i++) {
+    message += (char)payload[i];
+  }
+  if (message == "start") {
+    Serial.println("1"); 
+    i=1;
+    mqtt_client.disconnect();
+      Serial.print("Connecting to SQL...  ");
+    if (conn.connect(server_addr, 3306, user, password))       
+    Serial.println("OK.");  
+    else
+    Serial.println("FAILED.");
+    cursor = new MySQL_Cursor(&conn); 
+    
+  }
+}
+
+
+void setup()
+{
+  
+  Serial.begin(115200);
+  while (!Serial);      
+  Serial.printf("\nConnecting to %s", ssid);
+  WiFi.begin(ssid, pass);         
+  while (WiFi.status() != WL_CONNECTED) {
+           
+    delay(500);
+    Serial.print(".");
+  }
+
+  Serial.println("\nConnected to network");
+  Serial.print("My IP address is: ");
+  Serial.println(WiFi.localIP()); 
+  pinMode(led,OUTPUT);  
+  mqtt();
+
+
+}
+
+void loop()
+{
+  mqtt_client.loop();  
+
+  if(i==1){
+  readAndRecordData();
+  }
+
+}
+``` 
 
 ## THZ.py为服务器端代码
 ### 本此更新加入了基于mqtt协议的启动代码，从而实现了python成像脚本的自动运行
