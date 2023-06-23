@@ -85,5 +85,5 @@ README: [go to this file](./雷达/README.md)
 
 **TODO**
 
-- [ ] 操控电机运行
+- [x] 操控电机运行
 - [ ] 3D结果展示
