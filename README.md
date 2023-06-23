@@ -80,3 +80,10 @@ README: [go to this file](./雷达/README.md)
 
 - [ ] NFC芯片定位
 - [ ] openmv识别
+
+## APP
+
+**TODO**
+
+- [ ] 操控电机运行
+- [ ] 3D结果展示
