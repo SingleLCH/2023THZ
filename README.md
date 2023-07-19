@@ -12,8 +12,8 @@ README: [go to this file](./AI测试/README.md)
 **TODO**
 
 - [x] 进行第一轮数据集采集
-- [ ] 进行第二轮数据采集
-- [x] 能对目标进行识别
+- [x] 进行第二轮数据采集
+- [x] 能对目标进行识别x
 - [x] 进行脚本自动识别缺陷
 
 
@@ -23,9 +23,9 @@ README: [go to this file](./uni-app/README.md)
 **TODO**
 
 - [x] 读取MySQL数据库并将图片呈现
-- [ ] 界面优化，以及识别结果的呈现
-- [ ] 控制电机启动
-- [ ] 3d成像呈现
+- [x] 界面优化，以及识别结果的呈现
+- [x] 控制电机启动
+- [x] 3d成像呈现
 
 
 ## 数据传输
@@ -36,8 +36,8 @@ README: [go to this file](./数据传输/README.md)
 **TODO**
 #### esp8266部分
 - [x] 通过uart读取到stm32发来的数据，并将其插入到MySQL数据库中
-- [ ] 接收app信息，并启动电机
-- [ ] （optional）读取MySQL数据库，并将成像图片在oled上显示
+- [x] 接收app信息，并启动电机
+- [x] （optional）读取MySQL数据库，并将成像图片在oled上显示
 
 #### 服务器部分
 - [x] 监听数据端口，一旦发生变化便执行脚本
@@ -52,9 +52,9 @@ README: [go to this file](./显示/README.md)
 
 **TODO**
 
-- [ ] 对电机进行控制
-- [ ] （optional）读取MySQL数据库，并将成像图片在oled上显示
-- [ ]  lvgl的移植
+- [x] 对电机进行控制
+- [x] （optional）读取MySQL数据库，并将成像图片在oled上显示
+- [x]  lvgl的移植
 
 
 ## 电机
@@ -63,7 +63,7 @@ README: [go to this file](./电机/README.md)
 **TODO**
 
 - [x] 数据采集
-- [ ] 预扫描
+- [x] 预扫描
 
 
 ## 雷达
@@ -78,8 +78,8 @@ README: [go to this file](./雷达/README.md)
 
 **TODO**
 
-- [ ] NFC芯片定位
-- [ ] openmv识别
+- [x] NFC芯片定位
+- [x] openmv识别
 
 ## APP
 
