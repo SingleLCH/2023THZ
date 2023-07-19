@@ -2,7 +2,6 @@
 ### conda activate THZ
 python完整代码
 ``` python
-
 import matplotlib.pyplot as plt
 import pymysql
 import argparse
