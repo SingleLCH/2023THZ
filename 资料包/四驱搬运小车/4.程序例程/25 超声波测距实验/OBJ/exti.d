@@ -1,0 +1,10 @@
+..\OBJ\exti.o: ..\HARDWARE\EXTI\exti.c
+..\OBJ\exti.o: ..\HARDWARE\EXTI\exti.h
+..\OBJ\exti.o: ..\SYSTEM\sys\sys.h
+..\OBJ\exti.o: ..\SYSTEM\sys\stm32f10x.h
+..\OBJ\exti.o: C:\Keil\ARM\CMSIS\Include\core_cm3.h
+..\OBJ\exti.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+..\OBJ\exti.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+..\OBJ\exti.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+..\OBJ\exti.o: ..\SYSTEM\sys\system_stm32f10x.h
+..\OBJ\exti.o: ..\SYSTEM\delay\delay.h

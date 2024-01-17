@@ -1,0 +1,15 @@
+..\OBJ\esp8266.o: ..\DEVICE\ESP8266\esp8266.c
+..\OBJ\esp8266.o: ..\DEVICE\ESP8266\esp8266.h
+..\OBJ\esp8266.o: ..\SYSTEM\sys\sys.h
+..\OBJ\esp8266.o: ..\SYSTEM\sys\stm32f10x.h
+..\OBJ\esp8266.o: C:\Keil\ARM\CMSIS\Include\core_cm3.h
+..\OBJ\esp8266.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+..\OBJ\esp8266.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+..\OBJ\esp8266.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+..\OBJ\esp8266.o: ..\SYSTEM\sys\system_stm32f10x.h
+..\OBJ\esp8266.o: ..\HARDWARE\USART\usart.h
+..\OBJ\esp8266.o: C:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+..\OBJ\esp8266.o: C:\Keil\ARM\ARMCC\bin\..\include\string.h
+..\OBJ\esp8266.o: ..\SYSTEM\delay\delay.h
+..\OBJ\esp8266.o: ..\DEVICE\UTILS\utils.h
+..\OBJ\esp8266.o: ..\HARDWARE\LED\LED.h

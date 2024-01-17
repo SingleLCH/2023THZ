@@ -1,0 +1,5 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\HARDWARE\KEY -I..\HARDWARE\TIMER -I..\USER -I..\HARDWARE\USART -I..\DEVICE\OLED -I..\HARDWARE\EXTI -I..\DEVICE\ULN -I..\HARDWARE\TIMER 
+-I C:\Keil\ARM\RV31\INC 
+-I C:\Keil\ARM\CMSIS\Include 
+-I C:\Keil\ARM\Inc\ST\STM32F10x 
+-DSTM32F10X_HD -o "..\OBJ\uln.o" --omf_browse "..\OBJ\uln.crf" --depend "..\OBJ\uln.d" "..\DEVICE\ULN\ULN.c"

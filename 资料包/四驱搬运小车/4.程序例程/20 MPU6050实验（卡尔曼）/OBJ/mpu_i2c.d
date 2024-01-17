@@ -1,0 +1,10 @@
+..\OBJ\mpu_i2c.o: ..\HARDWARE\MPU_I2C\mpu_i2c.c
+..\OBJ\mpu_i2c.o: ..\HARDWARE\MPU_I2C\mpu_i2c.h
+..\OBJ\mpu_i2c.o: ..\SYSTEM\sys\sys.h
+..\OBJ\mpu_i2c.o: ..\SYSTEM\sys\stm32f10x.h
+..\OBJ\mpu_i2c.o: C:\Keil\ARM\CMSIS\Include\core_cm3.h
+..\OBJ\mpu_i2c.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+..\OBJ\mpu_i2c.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+..\OBJ\mpu_i2c.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+..\OBJ\mpu_i2c.o: ..\SYSTEM\sys\system_stm32f10x.h
+..\OBJ\mpu_i2c.o: ..\SYSTEM\delay\Delay.h

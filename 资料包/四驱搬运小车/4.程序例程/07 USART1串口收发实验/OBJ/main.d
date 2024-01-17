@@ -1,0 +1,11 @@
+..\OBJ\main.o: ..\USER\main.c
+..\OBJ\main.o: ..\SYSTEM\sys\sys.h
+..\OBJ\main.o: ..\SYSTEM\sys\stm32f10x.h
+..\OBJ\main.o: C:\Keil\ARM\CMSIS\Include\core_cm3.h
+..\OBJ\main.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+..\OBJ\main.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+..\OBJ\main.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+..\OBJ\main.o: ..\SYSTEM\sys\system_stm32f10x.h
+..\OBJ\main.o: ..\SYSTEM\delay\delay.h
+..\OBJ\main.o: ..\HARDWARE\USART\usart.h
+..\OBJ\main.o: C:\Keil\ARM\ARMCC\bin\..\include\stdio.h

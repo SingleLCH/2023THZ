@@ -1,0 +1,5 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\USER -I..\HARDWARE\USART -I..\DEVICE\OLED -I..\DEVICE\BRUSHLESS 
+-I C:\Keil\ARM\RV31\INC 
+-I C:\Keil\ARM\CMSIS\Include 
+-I C:\Keil\ARM\Inc\ST\STM32F10x 
+-DSTM32F10X_HD -o "..\OBJ\brushless.o" --omf_browse "..\OBJ\brushless.crf" --depend "..\OBJ\brushless.d" "..\DEVICE\BRUSHLESS\Brushless.c"

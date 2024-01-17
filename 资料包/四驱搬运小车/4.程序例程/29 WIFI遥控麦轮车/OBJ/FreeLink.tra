@@ -1,0 +1,40 @@
+*** Creating Trace Output File '..\OBJ\FreeLink.tra' Ok.
+### Preparing for ADS-LD.
+### Creating ADS-LD Command Line
+### List of Objects: adding '"..\obj\main.o"'
+### List of Objects: adding '"..\obj\ui.o"'
+### List of Objects: adding '"..\obj\control.o"'
+### List of Objects: adding '"..\obj\data_transfer.o"'
+### List of Objects: adding '"..\obj\delay.o"'
+### List of Objects: adding '"..\obj\sys.o"'
+### List of Objects: adding '"..\obj\startup_stm32f10x_hd.o"'
+### List of Objects: adding '"..\obj\led.o"'
+### List of Objects: adding '"..\obj\key.o"'
+### List of Objects: adding '"..\obj\timer.o"'
+### List of Objects: adding '"..\obj\dma.o"'
+### List of Objects: adding '"..\obj\adc.o"'
+### List of Objects: adding '"..\obj\stmflash.o"'
+### List of Objects: adding '"..\obj\usart.o"'
+### List of Objects: adding '"..\obj\beep.o"'
+### List of Objects: adding '"..\obj\encoder.o"'
+### List of Objects: adding '"..\obj\motor.o"'
+### List of Objects: adding '"..\obj\oled.o"'
+### List of Objects: adding '"..\obj\esp8266.o"'
+### List of Objects: adding '"..\obj\utils.o"'
+### List of Objects: adding '"..\obj\oled_user.o"'
+### ADS-LD Command completed:
+--cpu Cortex-M3 "..\obj\main.o" "..\obj\ui.o" "..\obj\control.o" "..\obj\data_transfer.o" "..\obj\delay.o" "..\obj\sys.o" "..\obj\startup_stm32f10x_hd.o" "..\obj\led.o" "..\obj\key.o" "..\obj\timer.o" "..\obj\dma.o" "..\obj\adc.o" "..\obj\stmflash.o" "..\obj\usart.o" "..\obj\beep.o" "..\obj\encoder.o" "..\obj\motor.o" "..\obj\oled.o" "..\obj\esp8266.o" "..\obj\utils.o" "..\obj\oled_user.o" 
+--strict --scatter "..\OBJ\FreeLink.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list "..\OBJ\FreeLink.map" -o ..\OBJ\FreeLink.axf### Preparing Environment (PrepEnvAds)
+### ADS-LD Output File: '..\OBJ\FreeLink.axf'
+### ADS-LD Command File: '..\OBJ\FreeLink.lnp'
+### Checking for dirty Components...
+### Creating CmdFile '..\OBJ\FreeLink.lnp', Handle=0x000008D0
+### Writing '.lnp' file
+### ADS-LD Command file '..\OBJ\FreeLink.lnp' is ready.
+### ADS-LD: About to start ADS-LD Thread.
+### ADS-LD: executed with 0 errors
+### Updating obj list
+### LDADS_file() completed.

@@ -1,0 +1,5 @@
+-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\HARDWARE\LED -I..\HARDWARE\KEY -I..\HARDWARE\TIMER -I..\HARDWARE\STMFLASH -I..\HARDWARE\DMA -I..\HARDWARE\ADC -I..\USER -I..\HARDWARE\USART -I..\DEVICE\BEEP -I..\DEVICE\ENCODER -I..\DEVICE\MOTOR -I..\DEVICE\OLED -I..\DEVICE\PS2 -I..\DEVICE\RC -I..\DEVICE\BLUETOOTH -I..\DEVICE\IR 
+-I C:\Keil\ARM\RV31\INC 
+-I C:\Keil\ARM\CMSIS\Include 
+-I C:\Keil\ARM\Inc\ST\STM32F10x 
+-DSTM32F10X_HD -o "..\OBJ\usart.o" --omf_browse "..\OBJ\usart.crf" --depend "..\OBJ\usart.d" "..\HARDWARE\USART\usart.c"

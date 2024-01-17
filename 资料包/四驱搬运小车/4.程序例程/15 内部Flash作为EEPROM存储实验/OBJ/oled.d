@@ -1,0 +1,10 @@
+..\OBJ\oled.o: ..\DEVICE\OLED\oled.c
+..\OBJ\oled.o: ..\DEVICE\OLED\oled.h
+..\OBJ\oled.o: ..\SYSTEM\sys\sys.h
+..\OBJ\oled.o: ..\SYSTEM\sys\stm32f10x.h
+..\OBJ\oled.o: C:\Keil\ARM\CMSIS\Include\core_cm3.h
+..\OBJ\oled.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+..\OBJ\oled.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+..\OBJ\oled.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+..\OBJ\oled.o: ..\SYSTEM\sys\system_stm32f10x.h
+..\OBJ\oled.o: ..\SYSTEM\delay\delay.h

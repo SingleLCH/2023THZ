@@ -1,0 +1,9 @@
+..\OBJ\exit.o: ..\HARDWARE\EXIT\exit.c
+..\OBJ\exit.o: ..\HARDWARE\EXIT\exit.h
+..\OBJ\exit.o: ..\SYSTEM\sys\sys.h
+..\OBJ\exit.o: ..\SYSTEM\sys\stm32f10x.h
+..\OBJ\exit.o: C:\Keil\ARM\CMSIS\Include\core_cm3.h
+..\OBJ\exit.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+..\OBJ\exit.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+..\OBJ\exit.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+..\OBJ\exit.o: ..\SYSTEM\sys\system_stm32f10x.h

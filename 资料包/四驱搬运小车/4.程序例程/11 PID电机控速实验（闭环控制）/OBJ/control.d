@@ -1,0 +1,16 @@
+..\OBJ\control.o: ..\USER\Control.c
+..\OBJ\control.o: ..\SYSTEM\sys\sys.h
+..\OBJ\control.o: ..\SYSTEM\sys\stm32f10x.h
+..\OBJ\control.o: C:\Keil\ARM\CMSIS\Include\core_cm3.h
+..\OBJ\control.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+..\OBJ\control.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+..\OBJ\control.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+..\OBJ\control.o: ..\SYSTEM\sys\system_stm32f10x.h
+..\OBJ\control.o: ..\USER\control.h
+..\OBJ\control.o: ..\HARDWARE\USART\usart.h
+..\OBJ\control.o: C:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+..\OBJ\control.o: ..\SYSTEM\delay\delay.h
+..\OBJ\control.o: ..\HARDWARE\TIMER\timer.h
+..\OBJ\control.o: C:\Keil\ARM\ARMCC\bin\..\include\string.h
+..\OBJ\control.o: ..\DEVICE\MOTOR\motor.h
+..\OBJ\control.o: ..\DEVICE\ENCODER\encoder.h

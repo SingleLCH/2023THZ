@@ -1,0 +1,12 @@
+..\OBJ\uln.o: ..\DEVICE\ULN\ULN.c
+..\OBJ\uln.o: ..\SYSTEM\sys\sys.h
+..\OBJ\uln.o: ..\SYSTEM\sys\stm32f10x.h
+..\OBJ\uln.o: C:\Keil\ARM\CMSIS\Include\core_cm3.h
+..\OBJ\uln.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+..\OBJ\uln.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+..\OBJ\uln.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+..\OBJ\uln.o: ..\SYSTEM\sys\system_stm32f10x.h
+..\OBJ\uln.o: ..\SYSTEM\delay\delay.h
+..\OBJ\uln.o: ..\HARDWARE\EXTI\exti.h
+..\OBJ\uln.o: ..\HARDWARE\TIMER\timer.h
+..\OBJ\uln.o: ..\DEVICE\ULN\ULN.h

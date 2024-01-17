@@ -1,0 +1,12 @@
+..\OBJ\bluetooth.o: ..\DEVICE\BLUETOOTH\bluetooth.c
+..\OBJ\bluetooth.o: ..\HARDWARE\USART\usart.h
+..\OBJ\bluetooth.o: ..\SYSTEM\sys\sys.h
+..\OBJ\bluetooth.o: ..\SYSTEM\sys\stm32f10x.h
+..\OBJ\bluetooth.o: C:\Keil\ARM\CMSIS\Include\core_cm3.h
+..\OBJ\bluetooth.o: C:\Keil\ARM\ARMCC\bin\..\include\stdint.h
+..\OBJ\bluetooth.o: C:\Keil\ARM\CMSIS\Include\core_cmInstr.h
+..\OBJ\bluetooth.o: C:\Keil\ARM\CMSIS\Include\core_cmFunc.h
+..\OBJ\bluetooth.o: ..\SYSTEM\sys\system_stm32f10x.h
+..\OBJ\bluetooth.o: C:\Keil\ARM\ARMCC\bin\..\include\stdio.h
+..\OBJ\bluetooth.o: ..\DEVICE\BLUETOOTH\bluetooth.h
+..\OBJ\bluetooth.o: ..\HARDWARE\DMA\dma.h

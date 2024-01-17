@@ -1,0 +1,48 @@
+Dependencies for Project 'FreeLink_Project', Target 'Target 1': (DO NOT MODIFY !)
+F (..\USER\main.c)(0x5EECBB8C)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\HARDWARE\LED -I..\HARDWARE\KEY -I..\HARDWARE\TIMER -I..\HARDWARE\STMFLASH -I..\HARDWARE\DMA -I..\HARDWARE\ADC -I..\USER -I..\HARDWARE\USART -I..\DEVICE\BEEP -I..\DEVICE\ENCODER -I..\DEVICE\MOTOR -I..\DEVICE\OLED -I..\DEVICE\PS2 -I..\DEVICE\RC -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -o "..\OBJ\main.o" --omf_browse "..\OBJ\main.crf" --depend "..\OBJ\main.d")
+I (..\SYSTEM\sys\sys.h)(0x5EECBBD1)
+I (..\SYSTEM\sys\stm32f10x.h)(0x5E93E764)
+I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x50062982)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
+I (..\SYSTEM\sys\system_stm32f10x.h)(0x5E93E763)
+I (..\HARDWARE\LED\led.h)(0x5EECBBD1)
+I (..\HARDWARE\TIMER\timer.h)(0x5EECBBD1)
+F (..\SYSTEM\delay\delay.c)(0x5E93E763)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\HARDWARE\LED -I..\HARDWARE\KEY -I..\HARDWARE\TIMER -I..\HARDWARE\STMFLASH -I..\HARDWARE\DMA -I..\HARDWARE\ADC -I..\USER -I..\HARDWARE\USART -I..\DEVICE\BEEP -I..\DEVICE\ENCODER -I..\DEVICE\MOTOR -I..\DEVICE\OLED -I..\DEVICE\PS2 -I..\DEVICE\RC -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -o "..\OBJ\delay.o" --omf_browse "..\OBJ\delay.crf" --depend "..\OBJ\delay.d")
+I (..\SYSTEM\delay\delay.h)(0x5E93E763)
+I (..\SYSTEM\sys\sys.h)(0x5EECBBD1)
+I (..\SYSTEM\sys\stm32f10x.h)(0x5E93E764)
+I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x50062982)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
+I (..\SYSTEM\sys\system_stm32f10x.h)(0x5E93E763)
+F (..\SYSTEM\sys\sys.c)(0x5E93E763)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\HARDWARE\LED -I..\HARDWARE\KEY -I..\HARDWARE\TIMER -I..\HARDWARE\STMFLASH -I..\HARDWARE\DMA -I..\HARDWARE\ADC -I..\USER -I..\HARDWARE\USART -I..\DEVICE\BEEP -I..\DEVICE\ENCODER -I..\DEVICE\MOTOR -I..\DEVICE\OLED -I..\DEVICE\PS2 -I..\DEVICE\RC -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -o "..\OBJ\sys.o" --omf_browse "..\OBJ\sys.crf" --depend "..\OBJ\sys.d")
+I (..\SYSTEM\sys\sys.h)(0x5EECBBD1)
+I (..\SYSTEM\sys\stm32f10x.h)(0x5E93E764)
+I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x50062982)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
+I (..\SYSTEM\sys\system_stm32f10x.h)(0x5E93E763)
+F (..\SYSTEM\startup_stm32f10x_hd.s)(0x5E93E6FE)(--cpu Cortex-M3 -g --apcs=interwork -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x --list "..\OBJ\startup_stm32f10x_hd.lst" --xref -o "..\OBJ\startup_stm32f10x_hd.o" --depend "..\OBJ\startup_stm32f10x_hd.d")
+F (..\HARDWARE\LED\led.c)(0x5EECBBD1)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\HARDWARE\LED -I..\HARDWARE\KEY -I..\HARDWARE\TIMER -I..\HARDWARE\STMFLASH -I..\HARDWARE\DMA -I..\HARDWARE\ADC -I..\USER -I..\HARDWARE\USART -I..\DEVICE\BEEP -I..\DEVICE\ENCODER -I..\DEVICE\MOTOR -I..\DEVICE\OLED -I..\DEVICE\PS2 -I..\DEVICE\RC -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -o "..\OBJ\led.o" --omf_browse "..\OBJ\led.crf" --depend "..\OBJ\led.d")
+I (..\HARDWARE\LED\led.h)(0x5EECBBD1)
+I (..\SYSTEM\sys\sys.h)(0x5EECBBD1)
+I (..\SYSTEM\sys\stm32f10x.h)(0x5E93E764)
+I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x50062982)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
+I (..\SYSTEM\sys\system_stm32f10x.h)(0x5E93E763)
+F (..\HARDWARE\TIMER\timer.c)(0x5EECBBD1)(-c --cpu Cortex-M3 -g -O0 --apcs=interwork -I..\SYSTEM\delay -I..\SYSTEM\sys -I..\HARDWARE\LED -I..\HARDWARE\KEY -I..\HARDWARE\TIMER -I..\HARDWARE\STMFLASH -I..\HARDWARE\DMA -I..\HARDWARE\ADC -I..\USER -I..\HARDWARE\USART -I..\DEVICE\BEEP -I..\DEVICE\ENCODER -I..\DEVICE\MOTOR -I..\DEVICE\OLED -I..\DEVICE\PS2 -I..\DEVICE\RC -I C:\Keil\ARM\RV31\INC -I C:\Keil\ARM\CMSIS\Include -I C:\Keil\ARM\Inc\ST\STM32F10x -DSTM32F10X_HD -o "..\OBJ\timer.o" --omf_browse "..\OBJ\timer.crf" --depend "..\OBJ\timer.d")
+I (..\HARDWARE\TIMER\timer.h)(0x5EECBBD1)
+I (..\SYSTEM\sys\sys.h)(0x5EECBBD1)
+I (..\SYSTEM\sys\stm32f10x.h)(0x5E93E764)
+I (C:\Keil\ARM\CMSIS\Include\core_cm3.h)(0x50062982)
+I (C:\Keil\ARM\ARMCC\bin\..\include\stdint.h)(0x4EB0D284)
+I (C:\Keil\ARM\CMSIS\Include\core_cmInstr.h)(0x50595C8C)
+I (C:\Keil\ARM\CMSIS\Include\core_cmFunc.h)(0x4FDA945C)
+I (..\SYSTEM\sys\system_stm32f10x.h)(0x5E93E763)
+I (..\HARDWARE\LED\led.h)(0x5EECBBD1)

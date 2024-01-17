@@ -1,0 +1,5 @@
+--cpu Cortex-M3 "..\obj\main.o" "..\obj\delay.o" "..\obj\sys.o" "..\obj\startup_stm32f10x_hd.o" "..\obj\usart.o" "..\obj\rc.o" "..\obj\oled_user.o" "..\obj\oled.o" 
+--strict --scatter "..\OBJ\FreeLink.sct" 
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols 
+--info sizes --info totals --info unused --info veneers 
+ --list "..\OBJ\FreeLink.map" -o ..\OBJ\FreeLink.axf
